@@ -41,8 +41,7 @@ class Conll2003Reader(DatasetReader):
                                 [Token(word) for word in sentence], tags
                                 )
                         sentence, tags = [], []
-                        continue
-                import ipdb; ipdb.set_trace()
+                    continue
                 word, tag = rows[0], rows[3]
                 sentence.append(word)
                 tags.append(tag)

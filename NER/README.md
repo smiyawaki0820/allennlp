@@ -52,6 +52,18 @@
 ## 英語 NER
 ```bash
 % bash scripts/downloads.sh -l en
+% allennlp train -f \
+  --include-package src \
+  -s outputs/conll03 \
+  configs/en_ner_conll03.jsonnet
+% allennlp predict \
+  --output-file outputs/conll03/output.json \
+  --include-package src \
+  --predictor conll_2003_predictor \
+  --use-dataset-reader \
+  --silent \
+  outputs/conll03 \
+  datasets/en/conll03/eng.testa
 ```
 
 ## 参考

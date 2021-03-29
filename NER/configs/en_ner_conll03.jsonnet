@@ -7,7 +7,6 @@ local learning_rate = 0.1;
   dataset_reader: {
     type: 'CoNLL03_Reader'
   },
-  data_loader: {},
   train_data_path: 'datasets/en/conll03/eng.train',
   validation_data_path: 'datasets/en/conll03/eng.testa',
   model: {
