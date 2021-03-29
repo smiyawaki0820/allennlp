@@ -1,0 +1,8 @@
+mecab-python3==0.996.5
+allennlp==1.1.0
+allennlp-models==1.1.0
+pyknp==0.4.1
+boto3==1.15.0
+termcolor==1.1.0
+tqdm
+ipdb
